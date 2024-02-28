@@ -1,7 +1,34 @@
 {
-  "UserID": "6e77699e-0bf9-4fb4-bd90-e14ef194268b",
-  "Name": "Bogusław",
-  "LastName": "Łęcina",
-  "Phone": "+33 333 333 333",
-  "Email": "b.łęcina@wp.pl"
+  "name": "Bogusław",
+  "lastName": "Łęcina",
+  "phone": "+33 333 333 333",
+  "email": "b.łęcina@wp.pl",
+  "exp": [
+    "C#",
+    "Unity3D",
+    "Golang",
+    "MongoDB",
+    "AWS Lambda (Golang)",
+    "Linux",
+    "Git"
+  ],
+  "someExp": [
+    "Unreal Engine",
+    "C++",
+    "Python",
+    "Perforce",
+    "Plastic SCM",
+    "SQL"
+  ],
+  "other": [
+    "Working with Scrum",
+    "Communication with and outside the team",
+    "Adaptability and willingness to learn",
+    "Keenness to share knowledge with others"
+  ],
+  "languages": [
+    "Polish (Native)",
+    "English (<strong>Professional working proficiency</strong>)"
+  ],
+  "profile": "&emsp;I am a software engineer with years of experience spanning multiple technologies and applications. Starting with game development, then branching off to fit the ever-evolving profile of the company, eventually reaching <strong>web technologies</strong>.<br /><br />&emsp;I have served as lead developer for several <strong>Unity3D</strong> projects, filled the role of Product Owner when it was needed, participated in choosing the right tech-stack for our projects, and much more.<br /><br />&emsp;I have extensive experience working with external teams (mostly <strong>XXXXXX</strong> US branch), coordinating work and making sure the management understands the developers' point of view.<br /><br />&emsp;Recently I took the position of manager / head developer for a front–end team within <strong>XXXXXX</strong>, focused on application development."
 }

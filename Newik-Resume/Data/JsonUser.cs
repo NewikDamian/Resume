@@ -8,17 +8,19 @@ namespace Newik_Resume.Data
 {
     public class JsonUser
     {
-        public Guid UserID { get; set; }
         public string? Name { get; set; }
         public string? LastName { get; set; }
         public string? Phone { get; set; }
         public string? Email { get; set; }
+        public string[]? Exp {  get; set; }
+        public string[]? SomeExp { get; set; }
+        public string[]? Other { get; set; }
+        public string[]? Languages { get; set; }
+        public string Profile { get; set; } = "";
+
 
         public bool ValidateData()
         {
-            if (UserID == Guid.Empty)
-                return false;
-
             if (Name == null || Name.Length < 3)
                 return false;
 

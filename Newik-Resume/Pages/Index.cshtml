@@ -20,6 +20,7 @@
                 </div>
             </div>
         </div>
+
         <div class="sidebar">
             <hr class="right" style="border-width: 0.0833333rem;">
             <div class="underlined">
@@ -32,6 +33,49 @@
                 <strong>E:</strong>
                 @Html.DisplayFor(model => model.Data.User.Email)
             </p>
+            <div class="underlined">
+                <h1 level="1">Tech Exp</h1>
+            </div>
+            <ul>
+                @foreach (var exp in Model.Data.User.Exp)
+                {
+                    <li>@exp</li>
+                }
+            </ul>
+            <div class="underlined">
+                <h3 level="3">Some experience in</h3>
+            </div>
+            <p>
+                @Html.DisplayFor(model => model.SomeExpString)
+            </p>
+            <div class="underlined">
+                <h1 level="1">Other skills</h1>
+            </div>
+            <ul>
+                @foreach (var other in Model.Data.User.Other)
+                {
+                    <li>@other</li>
+                }
+            </ul>
+            <div class="underlined">
+                <h1 level="1">Languages</h1>
+            </div>
+            <ul>
+                @foreach (var lang in Model.Data.User.Languages)
+                {
+                    <li>@lang</li>
+                }
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="underlined">
+                <h1 level="1">Profile</h1>
+            </div>
+            <p>@Html.Raw(Model.Data.User.Profile)</p>
+            <div class="underlined">
+                <h1 level="1">Relevant Work Experience</h1>
+            </div>
         </div>
     </div>
 </div>
