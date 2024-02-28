@@ -1,0 +1,221 @@
+@import url(https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;800&display=swap);
+
+:root {
+    font-size: 1.4vh
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    font-family: Barlow,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0
+}
+
+@media screen and (min-width: 769px) {
+    body {
+        overflow-y: scroll
+    }
+}
+
+code {
+    font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace
+}
+
+ul {
+    padding-left: 1rem
+}
+
+p {
+    line-height: .9rem;
+    margin: .5rem 0
+}
+
+strong {
+    font-weight: 500
+}
+
+.resume-page {
+    font-size: .8rem;
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    transition: -webkit-transform .25s;
+    transition: transform .25s;
+    transition: transform .25s,-webkit-transform .25s
+}
+
+@media only screen {
+    .resume-page {
+        height: calc(100vh - 2em);
+        margin: 0 auto;
+        width: calc(70.70707vh - 2em)
+    }
+}
+
+@media print, screen and (max-width: 768px) {
+    .resume-page {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        page-break-after: always;
+        -webkit-transform: scale(1) !important;
+        transform: scale(1) !important;
+        width: 100vw;
+    }
+
+    @page {
+        size: A4 portrait
+    }
+}
+
+
+
+.resume-container {
+    grid-gap: 0 0;
+    display: grid;
+    gap: 0 0;
+    grid-auto-flow: row;
+    grid-template-areas: "header header" "sidebar main";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 5fr;
+    height: 100%;
+    padding: 0;
+    width: 100%
+}
+
+@media only screen {
+    .resume-container {
+        box-shadow: 0 0 3em #c8c8c8;
+        box-sizing: border-box;
+        margin: 1rem 0;
+        padding: 0 1rem
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .resume-container {
+        margin: 0
+    }
+}
+
+@media only print {
+    .resume-container {
+        margin: 0
+    }
+}
+
+.resume-container > * {
+    position: relative
+}
+
+.resume-container .header {
+    grid-area: header
+}
+
+.resume-container .sidebar {
+    grid-area: sidebar;
+    padding: 1rem
+}
+
+.resume-container .main {
+    grid-area: main;
+    padding: 1rem
+}
+
+hr {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute
+}
+
+    hr.bottom {
+        border-top: solid #000;
+        bottom: 0;
+        width: 100%
+    }
+
+    hr.right {
+        border-right: solid #000;
+        height: 95%;
+        right: 0;
+        top: 2.5%
+    }
+
+#main-header {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    font-size: 1rem;
+    height: 100%;
+    justify-content: center;
+    text-transform: uppercase
+}
+
+    #main-header h1 {
+        font-size: 2.2rem;
+        font-weight: 100;
+        margin: 0 0 .2rem
+    }
+
+    #main-header span {
+        color: gray
+    }
+
+    #main-header .header-container {
+        grid-gap: 0 0;
+        display: grid;
+        gap: 0 0;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        width: 100%
+    }
+
+        #main-header .header-container > * {
+            display: flex;
+            flex-flow: column;
+            font-size: 1rem;
+            justify-content: center;
+            text-transform: uppercase
+        }
+
+        #main-header .header-container > .left img {
+            border-radius: 50%;
+            margin: auto;
+            width: 6.5rem
+        }
+
+        #main-header .header-container > .right {
+            align-items: start
+        }
+
+.underlined {
+    border-bottom: 1px solid #000;
+    font-size: 1rem;
+    margin: .5rem 0 1rem
+}
+
+    .underlined > * {
+        margin: 0
+    }
+
+    .underlined > h1 {
+        font-size: 1.3rem
+    }
+
+    .underlined > h1, .underlined > h2 {
+        font-weight: 200;
+        text-transform: uppercase
+    }
+
+    .underlined > h2 {
+        font-size: 1.1rem
+    }
+
+    .underlined > h3 {
+        font-size: .9rem;
+        font-weight: 300;
+        text-transform: uppercase
+    }

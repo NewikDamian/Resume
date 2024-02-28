@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Newik-Resume", "Newik-Resume\Newik-Resume.csproj", "{357EAD00-0173-4EC4-81C6-B6070E01F59E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{357EAD00-0173-4EC4-81C6-B6070E01F59E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{357EAD00-0173-4EC4-81C6-B6070E01F59E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{357EAD00-0173-4EC4-81C6-B6070E01F59E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{357EAD00-0173-4EC4-81C6-B6070E01F59E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84F960F2-81AD-4F07-A2C9-6DF687D8CA89}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,37 @@
+﻿@page
+@model ResumeModel
+@{
+    ViewData["Title"] = @Html.DisplayFor(model => model.Data.User.Name);
+}
+
+<div class="resume-page" style="transform: scale(1); cursor: zoom-in;">
+    <div class="resume-container">
+        <div class="header">
+            <div id="main-header">
+                <hr class="bottom" style="border-width: 0.166667rem;">
+                <div class="header-container">
+                    <div class="left">
+                        <img alt="Profile" class="avatar" src="img/avatar.png">
+                    </div>
+                    <div class="right">
+                        <h1>@Html.DisplayFor(model => model.Data.User.Name)</h1>
+                        <span>software engineer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <hr class="right" style="border-width: 0.0833333rem;">
+            <div class="underlined">
+                <h1 level="1">Contact</h1>
+            </div>
+            <p>
+                <strong>T:</strong>
+                @Html.DisplayFor(model => model.Data.User.Phone)
+                <br />
+                <strong>E:</strong>
+                @Html.DisplayFor(model => model.Data.User.Email)
+            </p>
+        </div>
+    </div>
+</div>
