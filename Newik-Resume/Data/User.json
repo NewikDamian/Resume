@@ -4,31 +4,56 @@
   "phone": "+33 333 333 333",
   "email": "b.łęcina@wp.pl",
   "exp": [
-    "C#",
-    "Unity3D",
-    "Golang",
-    "MongoDB",
-    "AWS Lambda (Golang)",
-    "Linux",
-    "Git"
+    "Papier 500",
+    "Karton-Gips",
+    "Montaż kinkietów"
   ],
   "someExp": [
-    "Unreal Engine",
-    "C++",
-    "Python",
-    "Perforce",
-    "Plastic SCM",
-    "SQL"
+    "Tynk"
   ],
   "other": [
-    "Working with Scrum",
-    "Communication with and outside the team",
-    "Adaptability and willingness to learn",
-    "Keenness to share knowledge with others"
+    "Może nie dobrze... Ale równiutko"
+  ],
+  "education": [
+    {
+      "dateFrom": "2004-04-23T18:25:43.511Z",
+      "dateTo": "2010-04-23T18:25:43.511Z",
+      "name": "Podstawówka",
+      "degree": "Wykształcenie podstawowe",
+      "field": "Ogólnokształcąca"
+    }
   ],
   "languages": [
-    "Polish (Native)",
-    "English (<strong>Professional working proficiency</strong>)"
+    "Polish (Native)"
   ],
-  "profile": "&emsp;I am a software engineer with years of experience spanning multiple technologies and applications. Starting with game development, then branching off to fit the ever-evolving profile of the company, eventually reaching <strong>web technologies</strong>.<br /><br />&emsp;I have served as lead developer for several <strong>Unity3D</strong> projects, filled the role of Product Owner when it was needed, participated in choosing the right tech-stack for our projects, and much more.<br /><br />&emsp;I have extensive experience working with external teams (mostly <strong>XXXXXX</strong> US branch), coordinating work and making sure the management understands the developers' point of view.<br /><br />&emsp;Recently I took the position of manager / head developer for a front–end team within <strong>XXXXXX</strong>, focused on application development."
+  "profile": "&emsp;Może nie najtaniej, ale jako tako<br /><br />&emsp;Na scianach łęciny nie znajdziesz szczeciny",
+  "relevantWorkExperience": [
+    {
+      "companyName": "Szmitex - Budowa Auu",
+      "dateFrom": "2010-04-23T18:25:43.511Z",
+      "dateTo": "2012-04-23T18:25:43.511Z",
+      "stack": [
+        {
+          "techName": "Gładź",
+          "position": "intern"
+        }
+      ]
+    },
+    {
+      "companyName": "Bogusław Łęcina - Usługi budowlano remontowe",
+      "dateFrom": "2012-04-23T18:25:43.511Z",
+      "currentJob": true,
+      "stack": [
+        {
+          "techName": "Gładź",
+          "position": "junior"
+        },
+        {
+          "techName": "Karton-Gips",
+          "position": "senior"
+        }
+      ]
+    }
+  ],
+  "about": "&emsp;Jakbym robił u siebie to bym się zdecydował na karton gips. Juz wolę stracić ten cm mieszkania ale ile szybciej... Pyk, pyk pyk, jako tako i fajrant.<br />&emsp;This document itself is a simple .net project, available at <a href=\"https://github.com/NewikDamian/Resume\">https://github.com/NewikDamian/Resume</a>"
 }

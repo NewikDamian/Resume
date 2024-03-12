@@ -3,6 +3,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.Text.RegularExpressions;
 using System.Numerics;
 using Microsoft.AspNetCore.Http.HttpResults;
+using System;
 
 namespace Newik_Resume.Data
 {
@@ -17,6 +18,9 @@ namespace Newik_Resume.Data
         public string[]? Other { get; set; }
         public string[]? Languages { get; set; }
         public string Profile { get; set; } = "";
+        public JsonWorkExperience[] RelevantWorkExperience { get; set; } = new JsonWorkExperience[0];
+        public string About { get; set; } = "";
+        public JsonEducation[] Education { get; set; } = new JsonEducation[0];
 
 
         public bool ValidateData()
@@ -71,5 +75,29 @@ namespace Newik_Resume.Data
                 return false;
             }
         }
+    }
+
+    public class JsonWorkExperience
+    {
+        public required string CompanyName { get; set; }
+        public required DateTime DateFrom { get; set; }
+        public DateTime DateTo { get; set; }
+        public bool CurrentJob { get; set; }
+        public required JsonStack[] Stack { get; set; }
+    }
+
+    public class JsonStack
+    {
+        public required string TechName { get; set; }
+        public required string Position { get; set; }
+    }
+
+    public class JsonEducation
+    {
+        public string? Name { get; set; }
+        public string? Degree { get; set; }
+        public string? Field { get; set; }
+        public DateTime DateFrom { get; set; }
+        public DateTime DateTo { get; set; }
     }
 }

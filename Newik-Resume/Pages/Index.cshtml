@@ -58,6 +58,15 @@
                 }
             </ul>
             <div class="underlined">
+                <h1 level="1">Education</h1>
+            </div>
+            <ul>
+                @foreach (var education in Model.Data.User.Education)
+                {
+                    <li>@education.Name (@education.DateFrom.Year - @education.DateTo.Year): @education.Degree in @education.Field</li>
+                }
+            </ul>
+            <div class="underlined">
                 <h1 level="1">Languages</h1>
             </div>
             <ul>
@@ -73,9 +82,29 @@
                 <h1 level="1">Profile</h1>
             </div>
             <p>@Html.Raw(Model.Data.User.Profile)</p>
+
             <div class="underlined">
                 <h1 level="1">Relevant Work Experience</h1>
             </div>
+            @foreach (var exp in Model.Data.User.WorkExperiences)
+            {
+                <div class="underlined">
+                    <h3 level="3">@exp.Name (@exp.ExpYears)</h3>
+                </div>
+                <ul>
+                    @foreach (var stack in exp.Stack)
+                    {
+                        <li>@stack.Name (@stack.Position)</li>
+                    }
+                </ul>
+            }
+
+            <div class="underlined">
+                <h1 level="1">About me</h1>
+            </div>
+            <p>@Html.Raw(Model.Data.User.About)</p>
         </div>
+        <br />
+        <p>I hereby give consent for my personal data to be processed by @Html.DisplayFor(model => model.Data.Company.Name) for the purpose of conducting recruitment for the position for which I am applying.</p>
     </div>
 </div>
