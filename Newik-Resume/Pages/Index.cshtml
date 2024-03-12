@@ -4,7 +4,7 @@
     ViewData["Title"] = @Html.DisplayFor(model => model.Data.User.Name);
 }
 
-<div class="resume-page" style="transform: scale(1); cursor: zoom-in;">
+<div id="canBeZoomed" class="resume-page" style="transform: scale(1); cursor: zoom-in;">
     <div class="resume-container">
         <div class="header">
             <div id="main-header">
@@ -108,3 +108,21 @@
         <p>I hereby give consent for my personal data to be processed by @Html.DisplayFor(model => model.Data.Company.Name) for the purpose of conducting recruitment for the position for which I am applying.</p>
     </div>
 </div>
+
+@section Scripts {
+    <script>
+        var isZoomed = false;
+
+        document.getElementById('canBeZoomed').addEventListener('click', function () {
+            if (!isZoomed) {
+                this.style.transform = "scale(1.6)";
+                this.style.cursor = "zoom-out";
+                isZoomed = true;
+            } else {
+                this.style.transform = "scale(1)";
+                this.style.cursor = "zoom-in";
+                isZoomed = false;
+            }
+        });
+    </script>
+}
