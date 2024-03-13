@@ -34,7 +34,7 @@ strong {
     font-weight: 500
 }
 
-.resume-page {
+.resume-content {
     font-size: .8rem;
     -webkit-transform-origin: top center;
     transform-origin: top center;
@@ -44,7 +44,7 @@ strong {
 }
 
 @media only screen {
-    .resume-page {
+    .resume-content {
         height: calc(100vh - 2em);
         margin: 0 auto;
         width: calc(70.70707vh - 2em)
@@ -52,7 +52,7 @@ strong {
 }
 
 @media print, screen and (max-width: 768px) {
-    .resume-page {
+    .resume-content {
         height: 100vh;
         margin: 0;
         padding: 0;

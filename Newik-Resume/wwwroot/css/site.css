@@ -5,7 +5,7 @@
 body {
     box-sizing: border-box;
     font-family: Calibri, Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
     margin: 0;
     padding: 0;
@@ -27,10 +27,10 @@ p {
 }
 
 strong {
-    font-weight: 500
+    font-weight: 800
 }
 
-.resume-page {
+.resume-content {
     font-size: .8rem;
     -webkit-transform-origin: top center;
     transform-origin: top center;
@@ -40,15 +40,33 @@ strong {
 }
 
 @media only screen {
-    .resume-page {
+    .resume-content {
         height: calc(100vh - 2em);
         margin: 0 auto;
         width: calc(70.70707vh - 2em)
     }
+
+    .underlined > h1 {
+        background-color: rgba(25, 25, 112, 0.9);
+        color: white;
+    }
+
+    .underlined > h3 {
+        background-color: rgba(25, 25, 112, 0.8);
+        color: white;
+    }
+
+    hr.bottom {
+        border-top: solid rgb(25, 25, 112);
+    }
+
+    hr.right {
+        border-right: solid rgb(25, 25, 112);
+    }
 }
 
 @media print, screen and (max-width: 768px) {
-    .resume-page {
+    .resume-content {
         height: 100vh;
         margin: 0;
         padding: 0;
@@ -56,6 +74,28 @@ strong {
         -webkit-transform: scale(1) !important;
         transform: scale(1) !important;
         width: 100vw;
+    }
+
+    .underlined {
+        border-bottom: 0.1rem solid #000;
+    }
+
+    .underlined > h1 {
+        background-color: white;
+        color: black;
+    }
+
+    .underlined > h3 {
+        background-color: white;
+        color: black;
+    }
+
+    hr.bottom {
+        border-top: solid #000;
+    }
+
+    hr.right {
+        border-right: solid #000;
     }
 
     @page {
@@ -125,13 +165,11 @@ hr {
 }
 
     hr.bottom {
-        border-top: solid #000;
         bottom: 0;
         width: 100%
     }
 
     hr.right {
-        border-right: solid #000;
         height: 95%;
         right: 0;
         top: 2.5%
@@ -149,12 +187,14 @@ hr {
 
     #main-header h1 {
         font-size: 2.2rem;
-        font-weight: 100;
-        margin: 0 0 .2rem
+        font-weight: 500;
+        margin: 0 0 .2rem;
+        color: midnightblue;
     }
 
     #main-header span {
-        color: gray
+        color: black;
+        font-weight: 700;
     }
 
     #main-header .header-container {
@@ -186,7 +226,6 @@ hr {
         }
 
 .underlined {
-    border-bottom: 1px solid #000;
     font-size: 1rem;
     margin: .5rem 0 1rem
 }
@@ -196,20 +235,20 @@ hr {
     }
 
     .underlined > h1 {
-        font-size: 1.3rem
+        font-size: 1.3rem;
     }
 
     .underlined > h1, .underlined > h2 {
-        font-weight: 200;
-        text-transform: uppercase
+        font-weight: 400;
+        text-transform: uppercase;
     }
 
     .underlined > h2 {
-        font-size: 1.1rem
+        font-size: 1.1rem;
     }
 
     .underlined > h3 {
         font-size: .9rem;
-        font-weight: 300;
-        text-transform: uppercase
+        font-weight: 500;
+        text-transform: uppercase;
     }
