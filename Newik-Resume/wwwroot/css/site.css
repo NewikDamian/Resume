@@ -177,7 +177,8 @@ hr {
         #main-header .header-container > .left img {
             border-radius: 50%;
             margin: auto;
-            width: 6.5rem
+            width: 6.5rem;
+            height: 6.5rem;
         }
 
         #main-header .header-container > .right {
