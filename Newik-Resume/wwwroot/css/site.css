@@ -8,7 +8,7 @@ body {
     font-weight: 300;
     font-style: normal;
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 @media screen and (min-width: 769px) {
@@ -32,6 +32,11 @@ strong {
 
 .resume-page {
     font-size: .8rem;
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    transition: -webkit-transform .25s;
+    transition: transform .25s;
+    transition: transform .25s,-webkit-transform .25s
 }
 
 @media only screen {
@@ -44,12 +49,13 @@ strong {
 
 @media print, screen and (max-width: 768px) {
     .resume-page {
-        height: 100%;
+        height: 100vh;
         margin: 0;
         padding: 0;
         break-after: page;
-        width: 100%;
-        transform: scale(1);
+        -webkit-transform: scale(1) !important;
+        transform: scale(1) !important;
+        width: 100vw;
     }
 
     @page {

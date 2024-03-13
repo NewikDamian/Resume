@@ -117,10 +117,12 @@
             if (!isZoomed) {
                 this.style.transform = "scale(1.6)";
                 this.style.cursor = "zoom-out";
+                this.style.isZoomed = true;
                 isZoomed = true;
             } else {
                 this.style.transform = "scale(1)";
                 this.style.cursor = "zoom-in";
+                this.style.isZoomed = false;
                 isZoomed = false;
             }
         });
