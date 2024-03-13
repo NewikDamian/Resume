@@ -8,12 +8,10 @@ namespace Newik_Resume.Models
     public class ResumeData
     {
         public User User { get; private set; }
-        public Company Company { get; private set; }
 
         public ResumeData()
         {
             User = LoadUser();
-            Company = new Company { Name = "TestComp" };
         }
 
         private User LoadUser()
