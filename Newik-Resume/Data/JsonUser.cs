@@ -21,6 +21,7 @@ namespace Newik_Resume.Data
         public JsonWorkExperience[] RelevantWorkExperience { get; set; } = new JsonWorkExperience[0];
         public string About { get; set; } = "";
         public JsonEducation[] Education { get; set; } = new JsonEducation[0];
+        public string Linked { get; set; } = "";
 
 
         public bool ValidateData()

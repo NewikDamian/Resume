@@ -67,6 +67,7 @@ namespace Newik_Resume.Transformer
                     WorkExperiences = workExperiences.ToArray(),
                     About = jsonUser.About,
                     Education = education.ToArray(),
+                    Linked = $"<a href=\"{jsonUser.Linked}\">{jsonUser.Linked}</a>",
 
                     IsValid = true
                 };

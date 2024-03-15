@@ -34,6 +34,10 @@
                 <strong>Email:</strong>
                 <br />
                 @Html.DisplayFor(model => model.Data.User.Email)
+                <br />
+                <br />
+                <strong>LinkedIn:</strong>
+                @Html.Raw(Model.Data.User.Linked)
             </p>
             <div class="underlined">
                 <h1 level="1">Tech Exp</h1>
@@ -96,7 +100,7 @@
                 <ul>
                     @foreach (var stack in exp.Stack)
                     {
-                        <li>@stack.Name (@stack.Position)</li>
+                        <li>@stack.Name: @stack.Position</li>
                     }
                 </ul>
             }

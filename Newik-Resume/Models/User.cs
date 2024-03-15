@@ -16,6 +16,7 @@ namespace Newik_Resume.Models
         public WorkExperience[] WorkExperiences { get; set; } = new WorkExperience[0];
         public string About { get; set; } = "";
         public Education[] Education { get; set; } = new Education[0];
+        public string Linked { get; set; } = "";
 
         public bool IsValid { get; set; } = false;
     }

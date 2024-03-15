@@ -21,6 +21,10 @@ ul {
     padding-left: 1rem
 }
 
+li::marker {
+    color: rgb(25, 25, 112);
+}
+
 p {
     line-height: .9rem;
     margin: .5rem 0
@@ -58,10 +62,12 @@ strong {
 
     hr.bottom {
         border-top: solid rgb(25, 25, 112);
+        opacity: 1;
     }
 
     hr.right {
         border-right: solid rgb(25, 25, 112);
+        opacity: 1;
     }
 }
 
@@ -92,10 +98,12 @@ strong {
 
     hr.bottom {
         border-top: solid #000;
+        opacity: 1;
     }
 
     hr.right {
         border-right: solid #000;
+        opacity: 1;
     }
 
     @page {
