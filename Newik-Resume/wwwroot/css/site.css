@@ -25,6 +25,10 @@ li::marker {
     color: rgb(25, 25, 112);
 }
 
+ul li li {
+    font-size: .6rem;
+}
+
 p {
     line-height: .9rem;
     margin: .5rem 0
