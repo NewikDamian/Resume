@@ -3,6 +3,7 @@
   "lastName": "Łęcina",
   "phone": "+33 333 333 333",
   "email": "b.łęcina@wp.pl",
+  "linked": "https://linkedin.com/",
   "exp": [
     "Papier 500",
     "Karton-Gips",
@@ -46,11 +47,18 @@
       "stack": [
         {
           "techName": "Gładź",
-          "position": "junior"
+          "position": "junior",
+          "Descriptions": [
+            "Kładzenie gładzi"
+          ]
         },
         {
           "techName": "Karton-Gips",
-          "position": "senior"
+          "position": "senior",
+          "Descriptions": [
+            "Nie trzeba kłaść gładzi",
+            "Jako tako"
+          ]
         }
       ]
     }

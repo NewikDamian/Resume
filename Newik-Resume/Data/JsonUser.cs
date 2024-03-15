@@ -91,6 +91,7 @@ namespace Newik_Resume.Data
     {
         public required string TechName { get; set; }
         public required string Position { get; set; }
+        public string[] Descriptions { get; set; } = new string[0];
     }
 
     public class JsonEducation

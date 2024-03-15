@@ -113,6 +113,16 @@ namespace Newik_Resume.Transformer
             stack.Name = jsonStack.TechName;
             stack.Position = jsonStack.Position;
 
+            List<string> descriptions = new List<string>();
+            if (jsonStack.Descriptions != null)
+            {
+                for (int i = 0; i < jsonStack.Descriptions.Length; i++)
+                {
+                    descriptions.Add(jsonStack.Descriptions[i]);
+                }
+            }
+            stack.Descriptions = descriptions.ToArray();
+
             return stack;
         }
 

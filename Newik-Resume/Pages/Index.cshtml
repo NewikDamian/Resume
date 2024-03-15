@@ -100,7 +100,14 @@
                 <ul>
                     @foreach (var stack in exp.Stack)
                     {
-                        <li>@stack.Name: @stack.Position</li>
+                        <li>@stack.Name: @stack.Position
+                            <ul>
+                                @foreach (var desc in stack.Descriptions)
+                                {
+                                    <li>@desc</li>
+                                }
+                            </ul>
+                        </li>
                     }
                 </ul>
             }

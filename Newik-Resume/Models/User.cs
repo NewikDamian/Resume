@@ -32,6 +32,7 @@ namespace Newik_Resume.Models
     {
         public string? Name { get; set; }
         public string? Position { get; set; }
+        public string[] Descriptions { get; set; } = new string[0];
     }
 
     public class Education
