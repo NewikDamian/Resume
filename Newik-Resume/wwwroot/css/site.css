@@ -31,7 +31,7 @@ ul li li {
 
 p {
     line-height: .9rem;
-    margin: .5rem 0
+    /*margin: .5rem 0*/
 }
 
 strong {
@@ -124,17 +124,17 @@ strong {
     grid-auto-flow: row;
     grid-template-areas: "header header" "sidebar main";
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 7fr;
     height: 100%;
     padding: 0;
-    width: 100%
+    width: 100%;
 }
 
 @media only screen {
     .resume-container {
         box-shadow: 0 0 3em #c8c8c8;
         box-sizing: border-box;
-        margin: 1rem 0;
+        /*margin: 1rem 0;*/
         padding: 0 1rem
     }
 }
@@ -156,7 +156,8 @@ strong {
 }
 
 .resume-container .header {
-    grid-area: header
+    grid-area: header;
+    height: 8rem;
 }
 
 .resume-container .sidebar {
@@ -241,7 +242,7 @@ hr {
 
 .underlined {
     font-size: 1rem;
-    margin: .5rem 0 1rem
+    margin: 0
 }
 
     .underlined > * {
@@ -250,6 +251,7 @@ hr {
 
     .underlined > h1 {
         font-size: 1.3rem;
+        margin: .5rem 0 .1rem
     }
 
     .underlined > h1, .underlined > h2 {
